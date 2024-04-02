@@ -66,7 +66,7 @@ function LoginForm() {
                 </div>
                 <div className='register_buttons'>
                     <NavLink to="/"><button className="register_button button">Register</button></NavLink>
-                    <button type="submit" onClick={handleSubmit} >Log In</button>
+                    {username.trim() !== "" && password.trim() !== "" ? <button type="submit" onClick={handleSubmit} >Log In</button> : <button type="submit" disabled={true} onClick={handleSubmit} >Log In</button>}
                 </div>
             </div>
         </div>
