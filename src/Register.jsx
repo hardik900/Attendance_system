@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 
 function Register(){
     const [register, setRegister] = useState("");
@@ -10,6 +10,7 @@ function Register(){
     const [numberMessage, setnumberMessage] = useState();
     const [emailMessage, setEmailMessage] = useState("");
     const [check_email, setcheck_email] = useState("")
+    const navigate = useNavigate()
 
     function checkInputField(){
         if(username !== '' &&number !== '' && email !=='' && password !== ''){
@@ -37,6 +38,7 @@ function Register(){
         localStorage.setItem("data",JSON.stringify(data))
         console.log(username,password,email,number,"dsvd")
         console.log(data)
+        navigate("/login")
     }
     return(
         <div className="register_heading">
