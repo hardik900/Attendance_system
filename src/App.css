@@ -1,0 +1,82 @@
+  *{
+    margin: 0px;
+    padding: 0px;
+  }
+  .register_heading{
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .heading{
+    text-align: center;
+  }
+
+  .dd{
+    margin-bottom: 10px;
+    padding: 15px;
+  }
+
+  .heading h1{
+    font-size: 50px;
+    margin-bottom: 20px ;
+  }
+
+  .Register_container{
+    width: 60%;
+    /* height: ; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    background-color: rgb(244, 245, 245);
+  }
+
+  .Register{
+    width: 100%;
+    /* background-color: rgb(255, 255, 255); */
+  }
+
+  .Register form{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 60px;
+  }
+
+  .Register form input{
+    height: 32px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+  }
+
+  input[type="text"]{
+    font-size: 17px;
+  }
+
+  .Register form label{
+    margin: 10px 0px 0px 0px ;
+  }
+
+  .register_buttons{
+    padding: 0px 20px 20px 20px;
+  }
+
+  .register_buttons button{
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+
+  .register_button{
+    margin: 0px 15px 0px 0px;
+  }
+  
+  /* view report css */
+  table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 10px ;
+  }
